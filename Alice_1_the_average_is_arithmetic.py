@@ -1,4 +1,3 @@
-﻿
 list_num = []
 print('Для вычисления среднего значения введите "q"')
 print('____________\n')
@@ -17,7 +16,10 @@ while True:
                 print(f'Среднее значение = {sum(list_num)/len(list_num)}\n')
                 break
     except ValueError:
-        print('Неверный формат Ввода..')
+        print('Неверный формат ввода!!!')
+        print('____________\n')
+    except ZeroDivisionError:
+        print('Значения не были указаны...')
+        print('____________\n')
         
     
-
